@@ -1,9 +1,11 @@
 const App = () => {
 
     return ( 
-    <h1>
-        <h1>New Project</h1>
-    </h1>
+    <div>
+        <h1 class="text-3xl font-bold underline">
+                Hello world!
+        </h1>
+    </div>
      );
 }
  
