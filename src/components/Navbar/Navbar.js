@@ -1,4 +1,4 @@
-import logo from '../assets/logo.png'
+import logo from '../../assets/logo.png'
 
 const Navbar = () => {
     return ( 
@@ -11,10 +11,6 @@ const Navbar = () => {
         <div>
             <img className="h-28 w-full" src={logo} alt="store" />
         </div>
-    </div>
-
-    <div>
-        
     </div>
 </>
     

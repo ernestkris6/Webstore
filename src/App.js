@@ -1,10 +1,10 @@
-import Main from "./components/Main";
+import Main from "./components/Main/Main";
 
 const App = () => {
 
     return ( 
     <div>
-        <Main />
+      <Main />
     </div>
      );
 }
