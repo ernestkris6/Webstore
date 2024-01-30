@@ -12,6 +12,10 @@ const Navbar = () => {
             <img className="h-28 w-full" src={logo} alt="store" />
         </div>
     </div>
+
+    <div>
+        
+    </div>
 </>
     
     );
