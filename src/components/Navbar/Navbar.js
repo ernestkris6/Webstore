@@ -11,10 +11,14 @@ const Navbar = () => {
         <div>
             <img className="h-28 w-full" src={logo} alt="store" />
         </div>
+        <div>
+            <button className='bg-black text-white p-2 border'>Log out</button>
+        </div>
     </div>
 
     <div className='bg-black w-full p-1'>
-        <h4 className='text-white text-center font-inter text-sm'>AFFORDABLE PRICES AT IT'S PEAK</h4>
+        <h4 className='text-white 
+        text-center font-inter text-sm'>AFFORDABLE PRICES AT IT'S PEAK</h4>
     </div>
 </>
     
