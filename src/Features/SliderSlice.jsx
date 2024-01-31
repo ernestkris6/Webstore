@@ -7,9 +7,11 @@ export const sliderSlice = createSlice({
         length: 4,
     },
     reducers: {
-        nextSlider() {},
-        prevSlider() {},
-        dotSlider() {}
+        nextSlider(state, actions) {
+            
+        },
+        prevSlider(state, actions) {},
+        dotSlider(state, actions) {}
     }
 })
 
