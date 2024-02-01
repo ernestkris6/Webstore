@@ -8,11 +8,12 @@ export const sliderSlice = createSlice({
 },
 reducers = {
     nextSlider(state, actions){
-        
+
     },
     prevSlider(state, actions){},
     dotSlider(state, actions){}
 })
 
-export const {nextSlider, prevSlider, dotSlider} = sliderSlice.actions;
-export default createSlice.reducers;
+export const {nextSlider, prevSlider, dotSlider} = createSlice.actions;
+export default sliderSlice.reducer;
+
