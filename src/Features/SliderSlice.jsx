@@ -14,6 +14,7 @@ reducers = {
     dotSlider(state, actions){}
 })
 
-export const {nextSlider, prevSlider, dotSlider} = createSlice.actions;
+export const {nextSlider, prevSlider, dotSlider} = sliderSlice.actions;
 export default sliderSlice.reducer;
+
 
