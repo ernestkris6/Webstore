@@ -3,7 +3,7 @@ import Main from "./components/Main/Main";
 const App = () => {
 
     return ( 
-    <div store={store}>
+    <div>
       <Main />
     </div>
      );
