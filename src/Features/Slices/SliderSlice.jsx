@@ -1,22 +1,28 @@
 import { createSlice, configureStore } from '@reduxjs/toolkit';
 
+import { SliderData } from '../../assets/Data/Data';
+import { act } from 'react-dom/test-utils';
 
 export const sliderSlice = createSlice({
     name : "slider",
     initialState : {
         value : 0,
-        length : 4,
+        length : SliderData.length,
     },
     reducers : {
         nextSlide(state, action){
             console.log(action, "action");
             console.log(state, "state");
-            state.value = action.payload > state.length ? 0 : action.payload
+            state.value = action.payload > state.length -1 ? 0 : action.payload
         },
         prevSlide(state, action){
-            state.value = action.payload < 0 ? state.length : action.payload
+            state.value = action.payload < 0 ? state.length -1 : action.payload
         },
-        dotSlide(state, action){}
+        dotSlide(state, action){
+            const slide = action.payload
+            console.log("dot", slide);
+            state.value = slide;
+        }
     }
 })
 
