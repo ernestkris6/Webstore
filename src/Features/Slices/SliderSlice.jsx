@@ -1,7 +1,7 @@
-import { createSlice, configureStore } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
 
 import { SliderData } from '../../assets/Data/Data';
-import { act } from 'react-dom/test-utils';
+
 
 export const sliderSlice = createSlice({
     name : "slider",
