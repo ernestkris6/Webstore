@@ -16,7 +16,7 @@ const Slider = () => {
         <img className='h-[550px] w-full' src={hero} alt='slider' />
 
         <button onClick={()=> dispatch(nextSlide(slideIndex + 1))}>Next</button> <br></br>
-        <button>Previous</button>
+        <button onClick={()=> dispatch(prevSlide(slideIndex - 1))}>Previous</button>
     </div>
   )
 }
