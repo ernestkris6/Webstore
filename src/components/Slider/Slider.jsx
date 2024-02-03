@@ -20,7 +20,7 @@ const Slider = () => {
                   : "opacity-0 duration-200 ease-in-out scale-95"}>
                     <div>
                       {parseInt(slide.id) === slideIndex && (
-                          <img className='h-[850px] w-full' src={slide.img} alt='shoes'/>
+                          <img className='h-[650px] w-full' src={slide.img} alt='shoes'/>
                       )}
                     </div>
                     <div className='absolute top-44 mx-auto inset-x-1/4'>

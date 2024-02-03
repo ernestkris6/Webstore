@@ -1,7 +1,7 @@
 import shoe1 from '../../assets/shoe1.jpg';
 import shoe2 from '../../assets/shoe2.jpg';
-import shoe3 from '../../assets/shoe3.jpg';
-import shoe4 from '../../assets/shoe4.jpg';
+import shoe3 from '../../assets/shoe.jpg';
+import shoe4 from '../../assets/shoe0.jpeg';
 
 
  export const SliderData = [
@@ -22,14 +22,14 @@ import shoe4 from '../../assets/shoe4.jpg';
     {
         id : "2",
         img : shoe3,
-        text : "Make your feet comfortable as walking on the beach",
+        text : "Make your feet comfortable as walking on the beach.",
 
     },
 
     {
         id : "3",
         img : shoe4,
-        text : "AUTUMN is coming, choose what suites you best",
+        text : "AUTUMN is coming, choose what suites you best.",
 
     },
     
