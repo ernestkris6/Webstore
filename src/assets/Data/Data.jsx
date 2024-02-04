@@ -1,7 +1,7 @@
 import shoe1 from '../../assets/shoe1.jpg';
 import shoe2 from '../../assets/shoe6.jpeg';
-import shoe3 from '../../assets/shoe.jpg';
-import shoe4 from '../../assets/shoeee.jpeg';
+import shoe3 from '../../assets/shoeee.jpeg';
+import shoe4 from '../../assets/shoe0.jpeg';
 
 
 // import shoe5 from "../images/shoe5.jpg";
