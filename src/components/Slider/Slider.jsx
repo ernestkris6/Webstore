@@ -37,7 +37,7 @@ const Slider = () => {
                   <div className='m-4' key={index}>
                       <div className={index === slideIndex ? 
                       "bg-green-300 rounded-full p-4 cursor-pointer" 
-                      : "bg-white-300 rounded-full p-4 cursor-pointer"}
+                      : "bg-white rounded-full p-4 cursor-pointer"}
                       onClick={() => dispatch(dotSlide(index))}></div>
                   </div>
                 )
