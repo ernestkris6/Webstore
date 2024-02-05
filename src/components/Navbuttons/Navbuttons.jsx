@@ -1,4 +1,6 @@
 import React from 'react';
+import { filteredProducts } from '../../Features/Slices/ProductSlice';
+import { useDispatch } from 'react-redux';
 
 
 const Navbuttons = () => {
@@ -14,6 +16,8 @@ const Navbuttons = () => {
         "Jackets",
     ]
 
+    const dispatch = useDispatch();
+
   return (
     <div>
         <div className='flex items-center justify-center py-8'>
@@ -21,7 +25,9 @@ const Navbuttons = () => {
                 return (
                     <div key={index} className='mr-4'>
                       <button className='bg-black text-lg
-                      text-white p-4 font-inter hover:bg-green-400 rounded-2xl'>
+                      text-white p-4 font-inter hover:bg-green-400 rounded-2xl'
+                      
+                      onClick={()=> dispatch(filteredProducts(button))}>
                         {button}</button>
                     </div>
                 )
