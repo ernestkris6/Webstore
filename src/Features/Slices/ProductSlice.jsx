@@ -1,28 +1,32 @@
 import { createSlice } from "@reduxjs/toolkit";
-// import { Data } from "../../assets/Data/Data";
+import { storeData } from "../../assets/Data/Data";
 
 export const productSlice = createSlice({
     name : "products",
     initialState : {
-        filteredProducts
-        // filteredProducts : JSON.parse(sessionStorage.getItem("filterData")) || Data
+        filteredProducts : JSON.parse(sessionStorage.getItem("filterData")) || storeData,
     },
     reducers : {
         filteredProducts(state, action) {
-             try {
-                 // const filter = Data.filter((product)=>
-                 // product.type === action.payload);
-                 // state.filteredProducts = filter;
-                 // console.log("filter", filter);
-                 // const saveState = JSON.stringify(filter);
-                 // sessionStorage.setItem("filterData", saveState);
-             }
-             catch(err) {
-                 return err
-             }
-        }
-     }
+         try {
+             const filter = storeData.filter((product)=>
+             product.type === action.payload);
+             state.filteredProducts = filter;
+             console.log("filter", filter);
+             const saveState = JSON.stringify(filter);
+             sessionStorage.setItem("filterData", saveState);
+         }
+         catch(err) {
+             return err
+         }
+    }
+ }
+
+    
 },
+
+    
+
 
 
 )

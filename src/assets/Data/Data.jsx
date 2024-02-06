@@ -2,7 +2,7 @@ import shoe1 from '../../assets/shoe1.jpg';
 import shoe2 from '../../assets/shoe6.jpeg';
 import shoe3 from '../../assets/shoeee.jpeg';
 import shoe4 from '../../assets/shoe0.jpeg';
-
+import shirt1 from "../../assets/shirt1.jpg";
 
 // import shoe5 from "../images/shoe5.jpg";
 // import shoe6 from "../images/shoe6.jpg";
@@ -100,6 +100,35 @@ import shoe4 from '../../assets/shoe0.jpeg';
     
    ];
 
+
+   export const storeData = [
+    {
+    id: "1",
+    img: shirt1,
+    name: "Casual T-Shirt 1",
+    text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
+    type: "T-Shirts",
+    size: ["XL", "L", "M", "S"],
+    color: ["black", "gray", "green"],
+    gender: "male",
+    price: 45,
+    }
+   ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
 
 // export const storeData = [
 //   {
