@@ -1,6 +1,7 @@
 import React from 'react';
 import { filteredProducts } from '../../Features/Slices/ProductSlice';
 import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 
 const Navbuttons = () => {
@@ -24,11 +25,13 @@ const Navbuttons = () => {
             {buttons.map((button, index) => {
                 return (
                     <div key={index} className='mr-4'>
+                      <Link to={"/filteredproducts/" + button}>
                       <button className='bg-black text-lg
                       text-white p-4 font-inter hover:bg-green-400 rounded-2xl'
                       
                       onClick={()=> dispatch(filteredProducts(button))}>
                         {button}</button>
+                      </Link>
                     </div>
                 )
             })}
