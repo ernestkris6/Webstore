@@ -18,7 +18,7 @@ const FilteredProducts = () => {
             {type}
           </h1>
       </div>
-      <div className='grid grid-col-4 justify-items-center py-8 gap-12'>
+      <div className='grid grid-cols-4 m-4 justify-items-center py-8 gap-12'>
           {products
           .filter((product) => product.type === type)
           .map((product, index) => {

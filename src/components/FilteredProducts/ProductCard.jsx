@@ -5,20 +5,19 @@ import {
     CardBody,
     CardFooter,
     Typography,
-    
   } from "@material-tailwind/react";
 
 const ProductCard = ({id, name, text, img, price, color}) => {
   return (
     
-    <Card className="mt-6 w-96">
-      <CardHeader color="blue-gray" className="relative h-56">
+    <Card className="w-96">
+      <CardHeader color="blue" className="relative h-76">
         <img
           src={img}
           alt=""
         />
       </CardHeader>
-      <CardBody>
+      <CardBody className='text-center'>
         <Typography variant="h5" color="blue-gray" className="mb-2">
           {name}
         </Typography>
@@ -26,16 +25,15 @@ const ProductCard = ({id, name, text, img, price, color}) => {
           {text}
         </Typography>
       </CardBody>
-      <CardFooter className="pt-0">
-      <Typography>${price}</Typography>
-      <Typography>
-        {color.map((color, index) => {
-            return <i className='fas fa map-marker-alt fa-sm mt-[3px] p-2 rounded-full w-4' 
+      <CardFooter divider className="flex flex-center justify-between py-3">
+      <Typography variant='small'>${price}</Typography>
+      <Typography variant='small' color='gray' className='flex gap-1'>
+        {color?.map((color, index) => {
+            return <i className='fas fa map-marker-alt fa-sm mt-[3px] p-2 mr-3 rounded-full w-4' 
             key={index}
             style={{backgroundColor: color}}></i>
         })}
       </Typography>
-        {/* <Button>Read More</Button> */}
       </CardFooter>
     </Card>
   )

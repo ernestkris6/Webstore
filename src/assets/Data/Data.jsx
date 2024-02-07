@@ -113,7 +113,7 @@ import shirt5 from "../../assets/shirt5.jpg";
     {
     id: "2",
     img: shirt2,
-    name: "Casual T-Shrit 2",
+    name: "Casual T-shirt 2",
     text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
     type: "T-Shirts",
     size: ["M", "L", "XL"],
@@ -125,7 +125,7 @@ import shirt5 from "../../assets/shirt5.jpg";
   {
     id: "3",
     img: shirt3,
-    name: "Casual T-Shrit 3",
+    name: "Casual T-shirt 3",
     text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
     type: "T-Shirts",
     size: ["L", "XL"],
@@ -136,7 +136,7 @@ import shirt5 from "../../assets/shirt5.jpg";
   {
     id: "4",
     img: shirt4,
-    name: "Casual T-Shrit 4",
+    name: "Casual T-shirt 4",
     text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
     type: "T-Shirts",
     size: ["M", "L", "XL"],
@@ -147,7 +147,7 @@ import shirt5 from "../../assets/shirt5.jpg";
   {
     id: "5",
     img: shirt5,
-    name: "Casual T-Shrit 5",
+    name: "Casual T-shirt 5",
     text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
     type: "T-Shirts",
     size: ["M", "L", "XL"],
