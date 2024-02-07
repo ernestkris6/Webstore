@@ -1,6 +1,8 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
+import ProductCard from './ProductCard';
+// import ProductCard from './ProductCard';
 
 const FilteredProducts = () => {
   const products = useSelector((state) => state.product.filteredProducts);
@@ -10,8 +12,31 @@ const FilteredProducts = () => {
 
 
   return(
-    <div>
-      <h1>FilteredProducts</h1>
+    <div className='pt-16'>
+      <div className='pl-14'>
+          <h1 className='text-4xl font-inter text-gray-600 font-bold traacking-normal leading-none'>
+            {type}
+          </h1>
+      </div>
+      <div className='grid grid-col-4 justify-items-center py-8 gap-12'>
+          {products
+          .filter((product) => product.type === type)
+          .map((product, index) => {
+            return (
+              <div key={index}>
+                <ProductCard
+                id={product.id}
+                name={product.name}
+                text={product.text}
+                img={product.img}
+                price={product.price}
+                color={product.color}
+                
+                />
+              </div>
+            )
+          })}
+      </div>
     </div>
   )
   
