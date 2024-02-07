@@ -7,7 +7,7 @@ export const productSlice = createSlice({
         filteredProducts : JSON.parse(sessionStorage.getItem("filterData")) || storeData,
     },
     reducers : {
-        filteredProducts(state, action) {
+        filterProducts(state, action) {
          try {
              const filter = storeData.filter((product)=>
              product.type === action.payload);
@@ -31,5 +31,5 @@ export const productSlice = createSlice({
 
 )
 
-export const { filteredProducts } = productSlice.actions;
+export const { filterProducts } = productSlice.actions;
 export default productSlice.reducer;

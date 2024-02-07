@@ -11,6 +11,7 @@ const Main = () => {
      <Slider />
      <Navbuttons />
      <FilteredItems />
+     
     </div>
   )
 }
