@@ -12,12 +12,12 @@ const ProductCard = ({id, name, text, img, price, color}) => {
     
     <Card className="w-96">
       <CardHeader color="blue" className="relative h-56">
-        <img className='h-full w-full'
+        <img className='w-full'
           src={img}
           alt=""
         />
       </CardHeader>
-      <CardBody className='text-center'>
+      <CardBody className='flex flex-col text-center'>
         <Typography variant="h5" color="blue-gray" className="mb-2">
           {name}
         </Typography>
