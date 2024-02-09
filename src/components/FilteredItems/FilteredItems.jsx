@@ -3,6 +3,7 @@ import React from 'react';
 import clothes from '../../assets/clothes.jpg';
 
 const FilteredItems = () => {
+
   return (
     <div>
         <div className='bg-green-300 w-[500px] mx-auto rounded-xl'>
@@ -14,10 +15,10 @@ const FilteredItems = () => {
         </div>
 
         <div className='flex flex-row justify-center item-center py-6'>
-            <img className='mx-auto rounded-xl shadow- mb-6 item-center h-[600px] w-[70%] shadow-lg shadow-gray-700' src={clothes} alt='filtered img' />
+            <img className='mx-auto rounded-xl shadow-m mb-6 item-center h-[600px] w-[70%] shadow-lg shadow-gray-700' src={clothes} alt='filtered img' />
         </div>
     </div>
   )
 }
 
-export default FilteredItems
+export default FilteredItems;
