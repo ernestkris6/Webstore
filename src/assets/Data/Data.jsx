@@ -11,11 +11,11 @@ import shirt5 from "../../assets/shirt5.jpg";
 // import shirt7 from "../../assets/shirt7.jpg";
 // import shirt8 from "../../assets/shirt8.jpg";
 
-// import shoe5 from "../images/shoe5.jpg";
-// import shoe6 from "../images/shoe6.jpg";
-// import shoe7 from "../images/shoe7.jpg";
-// import shoe8 from "../images/shoe8.jpg";
-// import shoe9 from "../images/shoe9.jpg";
+import shoe5 from "../../assets/shoe5.jpg";
+import shoe6 from "../../assets/shoe6.jpeg";
+import shoe7 from "../../assets/shoe7.jpg";
+// import shoe8 from "../../assets/shoe8.jpg";
+// import shoe9 from "../../assets/shoe9.jpg";
 import hoodie1 from "../../assets/hoodie1.jpg";
 import hoodie2 from "../../assets/hoodie2.jpg";
 import hoodie3 from "../../assets/hoodie3.jpg";
@@ -277,38 +277,38 @@ import bag7 from "../../assets/bag7.jpg";
       //   gender: "female",
       //   price: 355,
       // },
-    //  { id: "17",
-    //   img: shoe5,
-    //   name: "Casual Shoes 1",
-    //   text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
-    //   type: "Shoes",
-    //   size: ["40", "42", "44", "46"],
-    //   color: ["black", "gray"],
-    //   gender: "male",
-    //   price: 200,
-    // },
-    // {
-    //   id: "18",
-    //   img: shoe6,
-    //   name: "Casual Shoes 2",
-    //   text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
-    //   type: "Shoes",
-    //   size: ["40", "42", "44", "46"],
-    //   color: ["brown", "gray"],
-    //   gender: "female",
-    //   price: 250,
-    // },
-    // {
-    //   id: "19",
-    //   img: shoe7,
-    //   name: "Casual Shoes 3",
-    //   text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
-    //   type: "Shoes",
-    //   size: ["36", "38", "40", "42"],
-    //   color: ["black", "gray", "blue"],
-    //   gender: "female",
-    //   price: 685,
-    // },
+     { id: "17",
+      img: shoe5,
+      name: "Casual Shoes 1",
+      text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
+      type: "Shoes",
+      size: ["40", "42", "44", "46"],
+      color: ["black", "gray"],
+      gender: "male",
+      price: 200,
+    },
+    {
+      id: "18",
+      img: shoe6,
+      name: "Casual Shoes 2",
+      text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
+      type: "Shoes",
+      size: ["40", "42", "44", "46"],
+      color: ["brown", "gray"],
+      gender: "female",
+      price: 250,
+    },
+    {
+      id: "19",
+      img: shoe7,
+      name: "Casual Shoes 3",
+      text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
+      type: "Shoes",
+      size: ["36", "38", "40", "42"],
+      color: ["black", "gray", "blue"],
+      gender: "female",
+      price: 685,
+    },
     // {
     //   id: "20",
     //   img: shoe8,
@@ -331,17 +331,17 @@ import bag7 from "../../assets/bag7.jpg";
     //   gender: "male",
     //   price: 355,
     // },
-    // {
-    //   id: "22",
-    //   img: shoe10,
-    //   name: "Casual Shoes 6",
-    //   text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
-    //   type: "Shoes",
-    //   size: ["36", "38", "40", "42"],
-    //   color: ["purple", "gray", "black"],
-    //   gender: "male",
-    //   price: 200,
-    // },
+    {
+      id: "22",
+      img: shoe10,
+      name: "Casual Shoes 6",
+      text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
+      type: "Shoes",
+      size: ["36", "38", "40", "42"],
+      color: ["purple", "gray", "black"],
+      gender: "male",
+      price: 200,
+    },
 //     {
 //       id: "23",
 //       img: shoe11,
