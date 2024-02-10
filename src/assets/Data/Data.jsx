@@ -32,22 +32,22 @@ import hoodie6 from "../../assets/hoodie6.jpg";
 // import dress6 from "../images/dress6.jpg";
 // import dress7 from "../images/dress7.jpg";
 // import dress8 from "../images/dress8.jpg";
-// import jeans1 from "../images/jeans1.jpg";
-// import jeans2 from "../images/jeans2.jpg";
-// import jeans3 from "../images/jeans3.jpg";
-// import jeans4 from "../images/jeans4.jpg";
-// import jeans5 from "../images/jeans5.jpg";
-// import jeans6 from "../images/jeans6.jpg";
-// import jeans7 from "../images/jeans7.jpg";
-// import jeans8 from "../images/jeans8.jpg";
-// import jacket1 from "../images/jacket1.jpg";
-// import jacket2 from "../images/jacket2.jpg";
-// import jacket3 from "../images/jacket3.jpg";
-// import jacket4 from "../images/jacket4.jpg";
-// import jacket5 from "../images/jacket5.jpg";
-// import jacket6 from "../images/jacket6.jpg";
-// import jacket7 from "../images/jacket7.jpg";
-// import jacket8 from "../images/jacket8.jpg";
+import jeans1 from "../../assets/jeans1.jpg";
+import jeans2 from "../../assets/jeans2.jpg";
+import jeans3 from "../../assets/jeans3.jpg";
+import jeans4 from "../../assets/jeans4.jpg";
+// import jeans5 from "../../assets/jeans5.jpg";
+// import jeans6 from "../../assets/jeans6.jpg";
+// import jeans7 from "../../assets/jeans7.jpg";
+// import jeans8 from "../../assets/jeans8.jpg";
+// import jacket1 from "../../assets/jacket1.jpg";
+// import jacket2 from "../../assets/jacket2.jpg";
+// import jacket3 from "../../assets/jacket3.jpg";
+// import jacket4 from "../../assets/jacket4.jpg";
+// import jacket5 from "../../assets/jacket5.jpg";
+// import jacket6 from "../../assets/jacket6.jpg";
+// import jacket7 from "../../assets/jacket7.jpg";
+// import jacket8 from "../../assets/jacket8.jpg";
 import bag1 from "../../assets/bag1.jpg";
 import bag2 from "../../assets/bag2.jpg";
 import bag3 from "../../assets/bag3.jpg";
@@ -452,50 +452,50 @@ import bag7 from "../../assets/bag7.jpg";
 //             gender: "female",
 //             price: 685,
 //           },
-//           {
-//                 id: "33",
-//                 img: jeans1,
-//                 name: "Casual Jeans 1",
-//                 text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
-//                 type: "Jeans",
-//                 size: ["S", "M", "L"],
-//                 color: ["blue", "black"],
-//                 gender: "male",
-//                 price: 55,
-//               },
-//               {
-//                 id: "34",
-//                 img: jeans2,
-//                 name: "Casual Jeans 2",
-//                 text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
-//                 type: "Jeans",
-//                 size: ["S", "M"],
-//                 color: ["blue", "black"],
-//                 gender: "female",
-//                 price: 75,
-//               },
-//               {
-//                 id: "35",
-//                 img: jeans3,
-//                 name: "Casual Jeans 3",
-//                 text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
-//                 type: "Jeans",
-//                 size: ["M", "L", "XL"],
-//                 color: ["blue", "black"],
-//                 gender: "male",
-//                 price: 95,
-//               },
-//               {
-//                 id: "36",
-//                 img: jeans4,
-//                 name: "Casual Jeans 4",
-//                 text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
-//                 type: "Jeans",
-//                 size: ["M", "L", "XL"],
-//                 color: ["blue", "black"],
-//                 gender: "female",
-//                 price: 100,
-//               },
+          {
+                id: "33",
+                img: jeans1,
+                name: "Casual Jeans 1",
+                text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
+                type: "Jeans",
+                size: ["S", "M", "L"],
+                color: ["blue", "black"],
+                gender: "male",
+                price: 55,
+              },
+              {
+                id: "34",
+                img: jeans2,
+                name: "Casual Jeans 2",
+                text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
+                type: "Jeans",
+                size: ["S", "M"],
+                color: ["blue", "black"],
+                gender: "female",
+                price: 75,
+              },
+              {
+                id: "35",
+                img: jeans3,
+                name: "Casual Jeans 3",
+                text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
+                type: "Jeans",
+                size: ["M", "L", "XL"],
+                color: ["blue", "black"],
+                gender: "male",
+                price: 95,
+              },
+              {
+                id: "36",
+                img: jeans4,
+                name: "Casual Jeans 4",
+                text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
+                type: "Jeans",
+                size: ["M", "L", "XL"],
+                color: ["blue", "black"],
+                gender: "female",
+                price: 100,
+              },
 //               {
 //                 id: "37",
 //                 img: jeans5,
