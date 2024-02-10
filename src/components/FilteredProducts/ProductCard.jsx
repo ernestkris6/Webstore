@@ -12,7 +12,7 @@ const ProductCard = ({id, name, text, img, price, color}) => {
     
     <Card className="w-96">
       <CardHeader color="blue" className="relative">
-        <img className='w-full h-56'
+        <img className='w-full h-60'
           src={img}
           alt=""
         />
