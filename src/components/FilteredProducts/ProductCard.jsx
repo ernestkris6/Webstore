@@ -11,8 +11,8 @@ const ProductCard = ({id, name, text, img, price, color}) => {
   return (
     
     <Card className="w-96">
-      <CardHeader color="blue" className="relative h-56">
-        <img className='w-full'
+      <CardHeader color="blue" className="relative">
+        <img className='w-full h-56'
           src={img}
           alt=""
         />

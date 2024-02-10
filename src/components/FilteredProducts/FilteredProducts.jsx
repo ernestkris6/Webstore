@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import ProductCard from './ProductCard';
-// import ProductCard from './ProductCard';
+
 
 const FilteredProducts = () => {
   const products = useSelector((state) => state.product.filteredProducts);
