@@ -48,14 +48,14 @@ import hoodie6 from "../../assets/hoodie6.jpg";
 // import jacket6 from "../images/jacket6.jpg";
 // import jacket7 from "../images/jacket7.jpg";
 // import jacket8 from "../images/jacket8.jpg";
-// import bag1 from "../images/bag1.jpg";
-// import bag2 from "../images/bag2.jpg";
-// import bag3 from "../images/bag3.jpg";
-// import bag4 from "../images/bag4.jpg";
-// import bag5 from "../images/bag5.jpg";
-// import bag6 from "../images/bag6.jpg";
-// import bag7 from "../images/bag7.jpg";
-// import bag8 from "../images/bag8.jpg";
+import bag1 from "../../assets/bag1.jpg";
+import bag2 from "../../assets/bag2.jpg";
+import bag3 from "../../assets/bag3.jpg";
+import bag4 from "../../assets/bag4.jpg";
+import bag5 from "../../assets/bag5.jpg";
+import bag6 from "../../assets/bag6.jpg";
+import bag7 from "../../assets/bag7.jpg";
+// import bag8 from "../../assets/bag8.jpg";
 // import suit1 from "../images/suit1.jpg";
 // import suit2 from "../images/suit2.jpg";
 // import suit3 from "../images/suit3.jpg";
@@ -629,86 +629,86 @@ import hoodie6 from "../../assets/hoodie6.jpg";
 //                     price: 335,
 //                   },
     
-//                   {
-//                     id: "48",
-//                     img: bag1,
-//                     name: "Casual Bag 1",
-//                     text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
-//                     type: "Bags",
-//                     color: ["black", "blue", "red"],
-//                     gender: "female",
-//                     price: 500,
-//                   },
-//                   {
-//                     id: "49",
-//                     img: bag2,
-//                     name: "Casual Bag 2",
-//                     text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
-//                     type: "Bags",
-//                     color: ["green", "red", "blue"],
-//                     gender: "male",
-//                     price: 85,
-//                   },
-//                   {
-//                     id: "50",
-//                     img: bag3,
-//                     name: "Casual Bag 3",
-//                     text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
-//                     type: "Bags",
-//                     color: ["brown", "blue", "orange"],
-//                     gender: "female",
-//                     price: 200,
-//                   },
-//                   {
-//                     id: "51",
-//                     img: bag4,
-//                     name: "Casual Bag 4",
-//                     text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
-//                     type: "Bags",
-//                     color: ["brown", "blue", "orange"],
-//                     gender: "female",
-//                     price: 25,
-//                   },
-//                   {
-//                     id: "52",
-//                     img: bag5,
-//                     name: "Casual Bag 5",
-//                     text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
-//                     type: "Bags",
-//                     color: ["yellow", "blue", "black"],
-//                     gender: "female",
-//                     price: 40,
-//                   },
-//                   {
-//                     id: "53",
-//                     img: bag6,
-//                     name: "Casual Bag 6",
-//                     text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
-//                     type: "Bags",
-//                     color: ["blue", "black", "orange"],
-//                     gender: "female",
-//                     price: 400,
-//                   },
-//                   {
-//                     id: "54",
-//                     img: bag7,
-//                     name: "Casual Bag 7",
-//                     text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
-//                     type: "Bags",
-//                     color: ["blue", "black", "orange"],
-//                     gender: "female",
-//                     price: 355,
-//                   },
-//                   {
-//                     id: "55",
-//                     img: bag8,
-//                     name: "Casual Bag 8",
-//                     text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
-//                     type: "Bags",
-//                     color: ["blue", "green", "red"],
-//                     gender: "female",
-//                     price: 100,
-//                   },
+                  {
+                    id: "48",
+                    img: bag1,
+                    name: "Casual Bag 1",
+                    text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
+                    type: "Bags",
+                    color: ["black", "blue", "red"],
+                    gender: "female",
+                    price: 500,
+                  },
+                  {
+                    id: "49",
+                    img: bag2,
+                    name: "Casual Bag 2",
+                    text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
+                    type: "Bags",
+                    color: ["green", "red", "blue"],
+                    gender: "male",
+                    price: 85,
+                  },
+                  {
+                    id: "50",
+                    img: bag3,
+                    name: "Casual Bag 3",
+                    text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
+                    type: "Bags",
+                    color: ["brown", "blue", "orange"],
+                    gender: "female",
+                    price: 200,
+                  },
+                  {
+                    id: "51",
+                    img: bag4,
+                    name: "Casual Bag 4",
+                    text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
+                    type: "Bags",
+                    color: ["brown", "blue", "orange"],
+                    gender: "female",
+                    price: 25,
+                  },
+                  {
+                    id: "52",
+                    img: bag5,
+                    name: "Casual Bag 5",
+                    text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
+                    type: "Bags",
+                    color: ["yellow", "blue", "black"],
+                    gender: "female",
+                    price: 40,
+                  },
+                  {
+                    id: "53",
+                    img: bag6,
+                    name: "Casual Bag 6",
+                    text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
+                    type: "Bags",
+                    color: ["blue", "black", "orange"],
+                    gender: "female",
+                    price: 400,
+                  },
+                  {
+                    id: "54",
+                    img: bag7,
+                    name: "Casual Bag 7",
+                    text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
+                    type: "Bags",
+                    color: ["blue", "black", "orange"],
+                    gender: "female",
+                    price: 355,
+                  },
+                  // {
+                  //   id: "55",
+                  //   img: bag8,
+                  //   name: "Casual Bag 8",
+                  //   text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
+                  //   type: "Bags",
+                  //   color: ["blue", "green", "red"],
+                  //   gender: "female",
+                  //   price: 100,
+                  // },
 //                   {
 //                     id: "56",
 //                     img: suit1,
