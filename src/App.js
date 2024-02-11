@@ -11,7 +11,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Main />}></Route>
           <Route path="/filteredProducts/:type" element={<FilteredProducts />}></Route>
-          <Route path="/filteredProducts/:type/id" element={<SingleProduct />}></Route>
+          <Route path="/filteredProducts/:type/:id" element={<SingleProduct />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

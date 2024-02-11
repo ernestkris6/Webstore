@@ -19,8 +19,19 @@ export const productSlice = createSlice({
          catch(err) {
              return err
          }
-    }
+    },
+
+        singleProduct(state, action){
+            try {
+
+            }
+            catch{
+                
+            }
+        }
  }
+
+
 
     
 },
