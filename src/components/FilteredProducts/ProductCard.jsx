@@ -10,7 +10,7 @@ import {
 const ProductCard = ({id, name, text, img, price, color}) => {
   return (
     
-    <Card className="w-96">
+    <Card className="w-84">
       <CardHeader color="blue" className="relative">
         <img className='w-full h-60'
           src={img}
