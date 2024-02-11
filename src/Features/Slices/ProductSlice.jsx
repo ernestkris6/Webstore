@@ -26,7 +26,7 @@ export const productSlice = createSlice({
 
             }
             catch{
-                
+
             }
         }
  }
@@ -42,5 +42,5 @@ export const productSlice = createSlice({
 
 )
 
-export const { filterProducts } = productSlice.actions;
+export const { filterProducts, singleProduct } = productSlice.actions;
 export default productSlice.reducer;
