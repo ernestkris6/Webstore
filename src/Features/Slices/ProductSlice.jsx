@@ -9,7 +9,7 @@ export const productSlice = createSlice({
     reducers : {
         filterProducts(state, action) {
          try {
-             const filter = storeData.filter((product)=>
+             const filter = storeData.filter((product) =>
              product.type === action.payload);
              state.filteredProducts = filter;
              console.log("filter", filter);
@@ -23,7 +23,9 @@ export const productSlice = createSlice({
 
         singleProduct(state, action){
             try {
-
+                const oneProduct = storeData.filter((product) => 
+                product.id = action.payload);
+                
             }
             catch(err){
                 return err
