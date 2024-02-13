@@ -7,6 +7,10 @@ import {
     Typography,
   } from "@material-tailwind/react";
 
+import { useDispatch } from 'react-redux';
+import { Link, useParams } from 'react-router-dom';
+import { singleProduct } from '../../Features/Slices/ProductSlice';
+
 const ProductCard = ({id, name, text, img, price, color}) => {
   return (
     
