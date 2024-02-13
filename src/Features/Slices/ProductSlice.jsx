@@ -25,8 +25,8 @@ export const productSlice = createSlice({
             try {
 
             }
-            catch{
-
+            catch(err){
+                return err
             }
         }
  }
