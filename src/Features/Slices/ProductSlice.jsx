@@ -26,9 +26,9 @@ export const productSlice = createSlice({
             try {
                 const oneProduct = storeData.filter((product) => 
                 product.id === action.payload);
-                state.singleProduct = oneProduct;
+                state.singleProducts = oneProduct;
                 const saveState = JSON.stringify(oneProduct)
-                sessionStorage.setItem("oneProduct", oneProduct)
+                sessionStorage.setItem("oneProduct", saveState)
 
             }
             catch(err){

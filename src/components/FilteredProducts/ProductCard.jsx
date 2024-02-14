@@ -11,7 +11,12 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router-dom';
 import { singleProduct } from '../../Features/Slices/ProductSlice';
 
-const ProductCard = ({id, name, text, img, price, color}) => {
+  const ProductCard = ({id, name, text, img, price, color}) => {
+
+  const oneProduct = useSelector((state)=> state.oneProduct.filterProduct)
+
+  const dispatch = useDispatch();
+
   return (
     
     <Link to="/filteredProducts/:type/:id">
