@@ -7,14 +7,15 @@ import {
     Typography,
   } from "@material-tailwind/react";
 
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router-dom';
 import { singleProduct } from '../../Features/Slices/ProductSlice';
 
 const ProductCard = ({id, name, text, img, price, color}) => {
   return (
     
-    <Card className="w-84">
+    <Link to="/filteredProducts/:type/:id">
+         <Card className="w-84">
       <CardHeader color="blue" className="relative">
         <img className='w-full h-60'
           src={img}
@@ -40,6 +41,8 @@ const ProductCard = ({id, name, text, img, price, color}) => {
       </Typography>
       </CardFooter>
     </Card>
+    </Link>
+   
   )
 }
 

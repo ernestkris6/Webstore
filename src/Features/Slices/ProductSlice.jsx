@@ -5,7 +5,7 @@ export const productSlice = createSlice({
     name : "products",
     initialState : {
         filteredProducts : JSON.parse(sessionStorage.getItem("filterData")) || storeData,
-        oneProduct : JSON.parse(sessionStorage.getItem("oneProduct")) || storeData
+        oneProduct : JSON.parse(sessionStorage.getItem("oneProduct")) || storeData,
     },
     reducers : {
         filterProducts(state, action) {
