@@ -14,7 +14,7 @@ const FilteredProducts = () => {
   return(
     <div className='pt-16'>
       <div className='pl-14'>
-          <h1 className='text-4xl font-inter text-gray-600 font-bold traacking-normal leading-none'>
+          <h1 className='text-4xl font-inter text-gray-600 font-bold tracking-normal leading-none'>
             {type}
           </h1>
       </div>
