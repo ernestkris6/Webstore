@@ -7,7 +7,7 @@ import gce from '../../assets/Ellipse 363 (3).png'
 
 const Cards = () => {
   return (
-    <div className='flex flex-row gap-28 mt-[80px] justify-center item-center'>
+    <div className='gap-28 ml-[68px] mt-[80px] justify-center item-center'>
             
             <div>
             <img className='border-2 py-16 px-12 rounded-xl' src={jamb} alt='jamb logo' />
