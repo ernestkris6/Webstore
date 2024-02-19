@@ -7,20 +7,21 @@ import {
     Typography,
   } from "@material-tailwind/react";
 
-import { useDispatch, useSelector } from 'react-redux';
-import { Link, useParams } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { singleProduct } from '../../Features/Slices/ProductSlice';
 
   const ProductCard = ({id, name, text, img, price, color}) => {
 
-  const oneProduct = useSelector((state)=> state.oneProduct.filterProduct)
+  // const oneProduct = useSelector((state)=> state.oneProduct.filterProduct)
 
   const dispatch = useDispatch();
+  // const { type } = useParams();
 
   return (
     
     <Link to="/filteredProducts/:type/:id">
-         <Card className="w-84">
+         <Card className="w-84" onClick={()=> dispatch(singleProduct(id))}>
       <CardHeader color="blue" className="relative">
         <img className='w-full h-60'
           src={img}
