@@ -10,8 +10,12 @@ const SingleProduct = () => {
   const {id} = useParams();
 
   const productSize = product[0].size ? product[0].size[0] : "";
+  const productColor = product[0].color[0];
+
+
   const [size, setSize] = useState(productSize);
   console.log("sizes", size);
+  const [color, setColor] = useState();
 
 
   return (
@@ -37,7 +41,8 @@ const SingleProduct = () => {
             <p className='text-orange-700 text-xl font-inter font-bold tracking-normal leading-none pb-4'>15% OFF</p>
             <p>{product.text}</p>
             <div className='pb-4'>
-              <div>
+              {product.size ? 
+            <div>
               <label
               htmlFor="size"
               className="block mb-2 mt-4 text-sm font-medium text-gray-900 dark:text-white">
@@ -55,6 +60,54 @@ const SingleProduct = () => {
                     key={index} 
                     value={product}>
                     {product}
+                    </option>
+                  )
+                })}
+              </select>
+              </div> : (
+                <div>
+                <label
+                htmlFor="size"
+                className="block mb-2 mt-4 text-sm font-medium text-gray-900 dark:text-white">
+                Pick a size
+              </label>
+                <select
+                id='size'
+                name='size'
+                disabled={true}
+                value={size}
+                onChange={(e) => setSize(e.target.value)} 
+                className='className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'>
+                  {product?.size?.map((product, index) => {
+                    return (
+                      <option 
+                      key={index}                       value={product}>
+                      {product}
+                      </option>
+                    )
+                  })}
+                </select>
+                </div>
+              )}
+              
+              <div>
+              <label
+              htmlFor="color"
+              className="block mb-2 mt-4 text-sm font-medium text-gray-900 dark:text-white">
+              Pick a color
+            </label>
+              <select
+              id='color'
+              name='color'
+              value={color}
+              onChange={(e) => setColor(e.target.value)} 
+              className='className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'>
+                {product.color.map((product, index) => {
+                  return (
+                    <option 
+                    key={index} 
+                    value={product}>
+                    {color}
                     </option>
                   )
                 })}
