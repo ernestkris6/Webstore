@@ -26,6 +26,13 @@ const SingleProduct = () => {
         src={product.img} 
         alt={product.name} />
         </div>
+
+          <div className='grow-3'>
+          <div className='w-[500px]'>
+            <h5 className='text-2xl font-inter  font-bold tracking-normal leading-none'>{product.name}</h5>
+          </div>
+          </div>
+        
       </div>
       )
      })}
