@@ -8,7 +8,7 @@ import {
   } from "@material-tailwind/react";
 
 import { useDispatch } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { singleProduct } from '../../Features/Slices/ProductSlice';
 
   const ProductCard = ({id, name, text, img, price, color}) => {
@@ -16,11 +16,11 @@ import { singleProduct } from '../../Features/Slices/ProductSlice';
   // const oneProduct = useSelector((state)=> state.oneProduct.filterProduct)
 
   const dispatch = useDispatch();
-  // const { type } = useParams();
+  const { type } = useParams();
 
   return (
     
-    <Link to="/filteredProducts/:type/:id">
+    <Link to={`/filteredProducts/${type}/` + id}>
          <Card className="w-84" onClick={()=> dispatch(singleProduct(id))}>
       <CardHeader color="blue" className="relative">
         <img className='w-full h-60'
