@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
@@ -8,6 +8,10 @@ const SingleProduct = () => {
   const product = useSelector((state) => state.product.singleProduct)
   console.log("singleproduct", product);
   const {id} = useParams();
+
+  const productSize = product[0].size ? product[0].size[0] : "";
+  const [size, setSize] = useState(productSize);
+  console.log("sizes", size);
 
 
   return (
@@ -27,7 +31,7 @@ const SingleProduct = () => {
         alt={product.name} />
         </div>
 
-          <div className='grow-3'>
+          <div className='pr-16'>
           <div className='w-[700px]'>
             <h5 className='text-2xl font-inter  font-bold tracking-normal leading-none pb-4'>{product.name}</h5>
             <p className='text-orange-700 text-xl font-inter font-bold tracking-normal leading-none pb-4'>15% OFF</p>
@@ -35,13 +39,25 @@ const SingleProduct = () => {
             <div className='pb-4'>
               <div>
               <label
-                          htmlFor="size"
-                          className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                        >
-                          Pick a size
-                        </label>
-              <select className='className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'>
-                <option></option>
+              htmlFor="size"
+              className="block mb-2 mt-4 text-sm font-medium text-gray-900 dark:text-white">
+              Pick a size
+            </label>
+              <select
+              id='size'
+              name='size'
+              value={size}
+              onChange={(e) => setSize(e.target.value)} 
+              className='className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'>
+                {product.size.map((product, index) => {
+                  return (
+                    <option 
+                    key={index} 
+                    value={product}>
+                    {product}
+                    </option>
+                  )
+                })}
               </select>
               </div>
             </div>
