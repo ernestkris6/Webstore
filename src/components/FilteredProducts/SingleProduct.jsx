@@ -10,7 +10,7 @@ const SingleProduct = () => {
   const productSize = product[0].size ? product[0].size[0] : "";
   const productColor = product[0].color[0];
   const [size, setSize] = useState(productSize);
-  console.log("sizes", size);
+  // console.log("sizes", size);
   const [color, setColor] = useState(productColor);
 
 
