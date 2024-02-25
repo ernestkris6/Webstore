@@ -1,21 +1,26 @@
 import React, { useState } from 'react';
-
+import { Tooltip, Button } from "@material-tailwind/react";
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 
 const SingleProduct = () => {
 
   const product = useSelector((state) => state.product.singleProduct)
-  console.log("singleproduct", product);
-  const {id} = useParams();
-
+  
   const productSize = product[0].size ? product[0].size[0] : "";
   const productColor = product[0].color[0];
-
-
   const [size, setSize] = useState(productSize);
   console.log("sizes", size);
-  const [color, setColor] = useState();
+  const [color, setColor] = useState(productColor);
+
+
+  // console.log("singleproduct", product);
+  const {id} = useParams();
+
+  
+
+
+
 
 
   return (
@@ -90,7 +95,7 @@ const SingleProduct = () => {
                 </div>
               )}
               
-              <div>
+              <div className='pb-4'>
               <label
               htmlFor="color"
               className="block mb-2 mt-4 text-sm font-medium text-gray-900 dark:text-white">
@@ -102,16 +107,32 @@ const SingleProduct = () => {
               value={color}
               onChange={(e) => setColor(e.target.value)} 
               className='className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'>
-                {product.color.map((product, index) => {
+                {product.color.map((color, index) => {
                   return (
                     <option 
                     key={index} 
-                    value={product}>
+                    value={color}>
                     {color}
                     </option>
                   )
                 })}
               </select>
+              </div>
+              <div>
+                <Tooltip 
+                content="Add to Cart" 
+                className='p-3'
+                placement="bottom">
+                  <Button 
+                  className='p-3'
+                  color='gray'
+                  size="lg"
+                  variant="outlined"
+                  ripple={true}
+                  >
+                    ADD TO CART
+                  </Button>
+                </Tooltip>
               </div>
             </div>
           </div>
