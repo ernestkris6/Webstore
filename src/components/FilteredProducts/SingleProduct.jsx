@@ -16,13 +16,7 @@ const SingleProduct = () => {
 
   // console.log("singleproduct", product);
   const {id} = useParams();
-
   
-
-
-
-
-
   return (
     <div>
      {product
