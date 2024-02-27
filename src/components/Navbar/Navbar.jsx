@@ -1,8 +1,16 @@
+import React, { useState } from 'react';
+import Cart from '../Cart/Cart';
 import logo from '../../assets/logo.png';
 import love from '../../assets/download (1).png';
 import shopbag from '../../assets/download (3).png';
 
 const Navbar = () => {
+
+    const [open, setOpen] = useState(false);
+    const handleOpen = () => {
+      setOpen(true);
+    }
+    
     return ( 
 <>
     <div className="bg-black w-full p-2">
@@ -20,6 +28,11 @@ const Navbar = () => {
             <p className='ml-2 font-inter text-base font-medium text-center'>Wish List</p>
             <img className='w-4 h-4 ml-4' src={shopbag} alt='' />
             <p className='font-inter text-base font-medium text-center ml-2'>Shopping Bag</p>
+            <div>
+                {open && <Cart
+                 openModal={open}
+                 />}
+            </div>
         </div>
     </div>
 
