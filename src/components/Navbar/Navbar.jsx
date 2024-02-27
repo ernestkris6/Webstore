@@ -10,7 +10,7 @@ const Navbar = () => {
     const handleOpen = () => {
       setOpen(true);
     }
-    
+
     return ( 
 <>
     <div className="bg-black w-full p-2">
@@ -26,13 +26,19 @@ const Navbar = () => {
             <button className='font-inter text-base font-medium text-center m-4'>Logout</button>
             <img className='w-4' src={love} alt='love icon' />
             <p className='ml-2 font-inter text-base font-medium text-center'>Wish List</p>
-            <img className='w-4 h-4 ml-4' src={shopbag} alt='' />
+
+        <div className='flex flex-row cursor-pointer items-center'
+        onClick={handleOpen}>
+        <img className='w-4 h-4 ml-4' src={shopbag} alt='' />
             <p className='font-inter text-base font-medium text-center ml-2'>Shopping Bag</p>
-            <div>
-                {open && <Cart
+            <div> 
+                {open && 
+                <Cart
                  openModal={open}
+                 setOpen={setOpen}
                  />}
             </div>
+        </div>
         </div>
     </div>
 

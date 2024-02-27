@@ -10,6 +10,10 @@ import { Tooltip } from "@material-tailwind/react";
 import { useSelector, useDispatch } from "react-redux";
 
 const Cart = ({ openModal, setOpen}) => {
+  const cart = useSelector((state) => state.cart.cart);
+  const totalPrice = useSelector((state) => state.cart.totalPrice);
+  const dispatch = useDispatch();
+  
   return (
     <div>
       <Fragment>
@@ -77,7 +81,7 @@ const Cart = ({ openModal, setOpen}) => {
                             placement="bottom"
                           >
                             <Button
-                              onClick={() => dispatch(removeFromCart(item))}
+                              // onClick={() => dispatch(removeFromCart(item))}
                               size="sm"
                               color="red"
                               ripple={true}
