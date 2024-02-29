@@ -84,7 +84,8 @@ const SingleProduct = () => {
                   {product?.size?.map((product, index) => {
                     return (
                       <option 
-                      key={index}                       value={product}>
+                      key={index}                       
+                      value={product}>
                       {product}
                       </option>
                     )
@@ -129,6 +130,7 @@ const SingleProduct = () => {
                         name: product.name,
                         size: product.size,
                         color : product.color,
+                        img : product.img,
                         price : product.price,
                         amount : 1,
                         totalPrice : product.price
