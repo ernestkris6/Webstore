@@ -3,10 +3,11 @@ import Cart from '../Cart/Cart';
 import logo from '../../assets/logo.png';
 import love from '../../assets/download (1).png';
 import shopbag from '../../assets/download (3).png';
+import { useSelector } from 'react-redux';
 
 const Navbar = () => {
-
-    const [open, setOpen] = useState(false);
+    const totalAmount = useSelector((state) => state.cart.totalAmount)
+        const [open, setOpen] = useState(false);
     const handleOpen = () => {
       setOpen(true);
     }
@@ -29,7 +30,7 @@ const Navbar = () => {
 
         <div className='flex flex-row cursor-pointer items-center'
         onClick={handleOpen}>
-        <img className='w-4 h-4 ml-4' src={shopbag} alt='' />
+        {totalAmount > 0 ? <span className='rounded-full bg-gray-300 px-2 font-inter text-sm ml-3'>{totalAmount}</span> : <img className='w-4 h-4 ml-4' src={shopbag} alt='' />}
             <p className='font-inter text-base font-medium text-center ml-2'>Shopping Bag</p>
             <div> 
                 {open && 
