@@ -7,9 +7,12 @@ import gce from '../../assets/Ellipse 363 (3).png'
 
 const Cards = () => {
   return (
-    <div>
-
-    </div>
+    <section>
+      <div>
+        <h1 className='flex justify-center items-center'>Our Programs</h1>
+        <p className='flex justify-center items-center'>Select the exam you are preparing for</p>
+      </div>
+    </section>
   )
 }
 
