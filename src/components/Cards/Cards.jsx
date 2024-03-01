@@ -7,7 +7,16 @@ import gce from '../../assets/Ellipse 363 (3).png'
 
 const Cards = () => {
   return (
-    <div className='ml-[68px] mt-[80px] justify-center item-center lmobile:flex lmobile:flex-row lmobile:gap-28'>
+    <div>
+
+    </div>
+  )
+}
+
+export default Cards;
+
+
+{/* <div className='ml-[68px] mt-[80px] justify-center item-center lmobile:flex lmobile:flex-row lmobile:gap-28'>
             
             <div>
             <img className='border-2 py-16 px-12 rounded-xl' src={jamb} alt='jamb logo' />
@@ -26,8 +35,4 @@ const Cards = () => {
             <h3 className='flex text-center justify-center text-xl font-inter font-bold mt-3'>GCE Nov/Dec </h3>
             </div>
             
-    </div>
-  )
-}
-
-export default Cards;
+    </div> */}
