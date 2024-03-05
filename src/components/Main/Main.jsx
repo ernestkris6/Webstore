@@ -4,6 +4,7 @@ import Slider from '../Slider/Slider';
 import Navbuttons from '../Navbuttons/Navbuttons';
 import FilteredItems from '../FilteredItems/FilteredItems';
 import ProductSection from '../ProductSection/ProductSection';
+import Footer from '../Footer/Footer';
 
 const Main = () => {
   return (
@@ -13,6 +14,7 @@ const Main = () => {
      <Navbuttons />
      <FilteredItems />
     <ProductSection />
+    <Footer />
     </div>
   )
 }

@@ -2,13 +2,13 @@ import shoe1 from '../../assets/shoe1.jpg';
 import shoe2 from '../../assets/shoe6.jpeg';
 import shoe0 from '../../assets/shoe0.jpeg';
 import shoe10 from '../../assets/shoe10.jpeg';
-import shirt1 from "../../assets/shirt1.jpg";
+import shirt12 from "../../assets/shirt12.webp";
 import shirt2 from "../../assets/shirt2.jpg";
-import shirt3 from "../../assets/shirt3.jpg";
+import shirt01 from "../../assets/shirt01.jpeg";
 import shirt4 from "../../assets/shirt4.jpg";
-import shirt5 from "../../assets/shirt5.jpg";
-// import shirt6 from "../../assets/shirt6.jpg";
-// import shirt7 from "../../assets/shirt7.jpg";
+import shirt10 from "../../assets/shirt10.jpeg";
+import shirt0 from "../../assets/shirt0.jpeg";
+import shirt11 from "../../assets/shirt11.jpeg";
 // import shirt8 from "../../assets/shirt8.jpg";
 
 import shoe5 from "../../assets/shoe5.jpg";
@@ -109,7 +109,7 @@ import suit8 from "../../assets/suit8.jpeg";
    export const storeData = [
     {
     id: "1",
-    img: shirt1,
+    img: shirt12,
     name: "Casual T-Shirt 1",
     text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
     type: "T-Shirts",
@@ -133,7 +133,7 @@ import suit8 from "../../assets/suit8.jpeg";
 
   {
     id: "3",
-    img: shirt3,
+    img: shirt01,
     name: "Casual T-shirt 3",
     text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
     type: "T-Shirts",
@@ -144,7 +144,7 @@ import suit8 from "../../assets/suit8.jpeg";
   },
   {
     id: "4",
-    img: shirt4,
+    img: shirt11,
     name: "Casual T-shirt 4",
     text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
     type: "T-Shirts",
@@ -155,7 +155,7 @@ import suit8 from "../../assets/suit8.jpeg";
   },
   {
     id: "5",
-    img: shirt5,
+    img: shirt10,
     name: "Casual T-shirt 5",
     text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
     type: "T-Shirts",
@@ -164,28 +164,28 @@ import suit8 from "../../assets/suit8.jpeg";
     gender: "female",
     price: 15,
   },
-  // {
-  //   id: "6",
-  //   img: shirt6,
-  //   name: "Casual T-Shrit 6",
-  //   text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
-  //   type: "T-Shirts",
-  //   size: ["M", "L", "XL"],
-  //   color: ["gray", "purple", "yellow"],
-  //   gender: "female",
-  //   price: 25,
-  // },
-  // {
-  //   id: "7",
-  //   img: shirt7,
-  //   name: "Casual T-Shrit 7",
-  //   text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
-  //   type: "T-Shirts",
-  //   size: ["M", "L", "XL"],
-  //   color: ["black", "orange", "blue"],
-  //   gender: "male",
-  //   price: 25,
-  // },
+  {
+    id: "6",
+    img: shirt0,
+    name: "Casual T-Shrit 6",
+    text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
+    type: "T-Shirts",
+    size: ["M", "L", "XL"],
+    color: ["gray", "purple", "yellow"],
+    gender: "female",
+    price: 25,
+  },
+  {
+    id: "7",
+    img: shirt4,
+    name: "Casual T-Shrit 7",
+    text: "Fashion never stops. There is always the new project, the new opportunity. The important thing is to take your time and not get stressed. I just want to do what I do.",
+    type: "T-Shirts",
+    size: ["M", "L", "XL"],
+    color: ["black", "orange", "blue"],
+    gender: "male",
+    price: 25,
+  },
   // {
   //   id: "8",
   //   img: shirt8,

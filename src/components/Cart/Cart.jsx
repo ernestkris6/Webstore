@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
 import {
   Button,
   Dialog,
@@ -7,12 +7,12 @@ import {
   DialogFooter,
 } from "@material-tailwind/react";
 import { Tooltip } from "@material-tailwind/react";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 
 const Cart = ({ openModal, setOpen}) => {
   const cart = useSelector((state) => state.cart.cart);
   const totalPrice = useSelector((state) => state.cart.totalPrice);
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   
   return (
     <div>

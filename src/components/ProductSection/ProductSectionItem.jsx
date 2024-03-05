@@ -32,31 +32,32 @@ const ProductSectionItem = ({
 
   return (
     <div>
-        <Card className="mt-6 w-96">
-      <CardHeader color="blue-gray" className="relative h-56">
+        <Card className="w-96 ">
+      <CardHeader color="blue-gray" className="h-56 ">
         <img
-          src={img} alt={name}
+          className='rounded-md' src={img} alt={name}
         />
       </CardHeader>
       <CardBody className='text-center'>
-        <Typography variant="h5" color="blue-gray" className="mb-2">
+        <Typography variant="h4" color="blue-gray" className="mb-2" textGradient>
         {name}
         </Typography>
-        <Typography color='gray' className='font-medium'>
+        <Typography color='gray' className='font-medium' textGradient>
          {text}
         </Typography>
-        <div className='flex justify-between items-center pt-4'>
+        <div className='flex justify-between items-center pt-4' textGradient>
         <Typography>
          Size left: {defaultSize}
         </Typography>
         <Typography color='gray' className='font-medium'>
-         Color: <span className='px-2 rounded-full ml-2' style={{backgroundColor:  {defaultColor} }}></span>
+         Color: { " " } 
+         <span className='px-2 rounded-full ml-2' style={{backgroundColor : defaultColor }}></span>
         </Typography>
         </div>
       </CardBody>
       <CardFooter className="flex justify-center gap-7 pt-2">
-        <Tooltip content='Add to Cart' placement='bottom'>
-            <Button onClick={()=> dispatch(addToCart({
+        <Tooltip className='p-4' content='Add to Cart' placement='bottom'>
+            <Button className='p-4' onClick={()=> dispatch(addToCart({
                 id : id,
                 img : img,
                 text : text,
