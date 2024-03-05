@@ -49,9 +49,14 @@ const ProductSectionItem = ({
         <Typography>
          Size left: {defaultSize}
         </Typography>
-        <Typography color='gray' className='font-medium'>
+        <Typography 
+        color='gray' 
+        className='font-medium'>
          Color: { " " } 
-         <span className='px-2 rounded-full ml-2' style={{backgroundColor : defaultColor }}></span>
+         <span 
+         className='px-2 rounded-full ml-2' 
+         style={{backgroundColor : defaultColor }}>
+         </span>
         </Typography>
         </div>
       </CardBody>
@@ -67,7 +72,9 @@ const ProductSectionItem = ({
                 size : defaultSize,
                 color : defaultColor,
             }))} 
-                size='lg' color='gray' variant='outlined' 
+                size='lg' 
+                color='gray' 
+                variant='outlined' 
                 ripple='true'>Add to Cart</Button>
         </Tooltip>
       </CardFooter>

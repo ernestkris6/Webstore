@@ -23,7 +23,7 @@ import { singleProduct } from '../../Features/Slices/ProductSlice';
     <Link to={`/filteredProducts/${type}/` + id}>
          <Card className="w-84" onClick={()=> dispatch(singleProduct(id))}>
       <CardHeader color="blue" className="relative">
-        <img className='w-full h-60'
+        <img className='w-full h-60 rounded-md'
           src={img}
           alt=""
         />
