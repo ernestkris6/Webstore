@@ -1,9 +1,9 @@
 import React from 'react'
 
-const OtherItems = () => {
+const ProductSection = () => {
   return (
     <div>OtherItems</div>
   )
 }
 
-export default OtherItems;
+export default ProductSection;

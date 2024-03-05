@@ -42,14 +42,14 @@ const Cards = () => {
       </div>
 
       <div className='flex ml-6 mt-12'>
-        <input className='p-3 border-rounded border-2 rounded-2xl w-full outline-none' type='text' placeholder='Search'/>
+        <input className='p-3 border-rounded border-2 rounded-2xl w-full outline-none lmobile:w-[480px] lmobile:py-1 lmobile:ml-12' type='text' placeholder='Search'/>
        <img className='relative left-[-40px] h-6 mt-4' src={search} alt='search icon'/>
         <div className='mt-3 p-0'>
-          <img className='mr-14' src={filter} alt='filter'/>
+          <img className='mr-14 lmobile:border-2 rounded-2xl lmobile:px-2 lmobile:py-1 lmobile:mb-3' src={filter} alt='filter'/>
         </div>
       </div>
 
-      <div className='grid grid-cols-3 gap-6 px-6 mt-12'>
+      <div className='grid grid-cols-3 gap-6 px-6 mt-12 lmobile:grid-cols-4 lmobile:m-12'>
         <div>
             <img className='border-2 rounded-xl px-4 py-8' src={images.img5} alt='img'/>
             <p className='text-center'>{data.text2}</p>
@@ -71,12 +71,12 @@ const Cards = () => {
         <p  className='text-center'>{data.text2}</p>
         </div>
         <div>
-        <img className='border-2 rounded-xl px-6 py-10' src={images.img6} alt='img'/>
+        <img className='border-2 rounded-xl px-6 py-10' src={images.img2} alt='img'/>
         <p className='text-center'>{data.text2}</p>
         </div>
       </div>
 
-      <div className='flex flex-row gap-4 mt-8 justify-center'>
+      <div className='flex flex-row gap-4 mt-8 justify-center lmobile:top-20'>
         <div>
             <button className='bg-white rounded-full border-2 transform rotate-180'>
               <img src={icon1} alt='icon2'/>
