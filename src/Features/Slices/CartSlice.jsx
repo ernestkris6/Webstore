@@ -51,11 +51,19 @@ export const cartSlice = createSlice({
             const productId = action.payload;
         
             try {
-                const exist = state.cart.find(
-                    (product) => 
+                const exist = state.cart.find((product) => 
                 product.id === productId.id && 
                 product.size === productId.size &&
-                product.color === productId.color)
+                product.color === productId.color);
+                if(exist.amount === 1){
+                    state.cart = state.cart.filter((product) => 
+                    product.id !== product.id ||
+                    product.size !== product.size || 
+                    product.color !== product.color
+                    ); 
+                    state.totalAmount --;
+                    state.totalPrice += productId.price; 
+                }
             } 
             catch (err) {
                 return err 
