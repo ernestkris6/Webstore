@@ -130,6 +130,7 @@ const SingleProduct = () => {
                         name: product.name,
                         size: product.size,
                         color : product.color,
+                        text : product.text,
                         img : product.img,
                         price : product.price,
                         amount : 1,

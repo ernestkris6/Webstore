@@ -45,9 +45,24 @@ export const cartSlice = createSlice({
             catch(err){
                 return err
             }
+        },
+
+        removeFromCart(state, action) {
+            const productId = action.payload;
+        
+            try {
+                const exist = state.cart.find(
+                    (product) => 
+                product.id === productId.id && 
+                product.size === productId.size &&
+                product.color === productId.color)
+            } 
+            catch (err) {
+                return err 
+            }
         }
-    }
+    }    
 })
 
-export const { addToCart } = cartSlice.actions;
+export const { addToCart, removeFromCart } = cartSlice.actions;
 export default cartSlice.reducer;

@@ -7,12 +7,12 @@ import {
   DialogFooter,
 } from "@material-tailwind/react";
 import { Tooltip } from "@material-tailwind/react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 
 const Cart = ({ openModal, setOpen}) => {
   const cart = useSelector((state) => state.cart.cart);
   const totalPrice = useSelector((state) => state.cart.totalPrice);
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
   
   return (
     <div>
@@ -87,6 +87,7 @@ const Cart = ({ openModal, setOpen}) => {
                               color="red"
                               ripple={true}
                               variant="filled"
+                              // className="bg-red p-4"
                             >
                               Remove
                             </Button>
@@ -101,7 +102,7 @@ const Cart = ({ openModal, setOpen}) => {
             <DialogFooter className="flex justify-start items-center">
               <p className="text-black text-base font-inter tracking-normal leading-none pt-2">
                 Total Price of All Products:{" "}
-                <span className="ml-2">{totalPrice}$</span>
+                <span className="ml-2">${totalPrice}</span>
               </p>
             </DialogFooter>
           </Dialog>
