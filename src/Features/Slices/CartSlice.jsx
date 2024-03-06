@@ -64,6 +64,12 @@ export const cartSlice = createSlice({
                     state.totalAmount --;
                     state.totalPrice += productId.price; 
                 }
+                else{
+                    exist.amount --;
+                    exist.totalPrice -= productId.price;
+                    state.totalAmount --;
+                    state.totalPrice -=productId.price;
+                }
             } 
             catch (err) {
                 return err 

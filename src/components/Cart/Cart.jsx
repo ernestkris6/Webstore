@@ -8,10 +8,12 @@ import {
 } from "@material-tailwind/react";
 import { Tooltip } from "@material-tailwind/react";
 import { useSelector, useDispatch } from "react-redux";
+import { removeFromCart } from "../../Features/Slices/CartSlice";
 
 const Cart = ({ openModal, setOpen}) => {
   const cart = useSelector((state) => state.cart.cart);
   const totalPrice = useSelector((state) => state.cart.totalPrice);
+  // const removeFromCart = useSelector((state) => state.cart.removeFromCart)
   const dispatch = useDispatch();
   
   return (
@@ -70,11 +72,11 @@ const Cart = ({ openModal, setOpen}) => {
                         </p>
                         <p className="text-black text-sm font-inter tracking-normal leading-none pt-2">
                           Single Item Price:{" "}
-                          <span className="ml-2">{item.price}$</span>
+                          <span className="ml-2">${item.price}</span>
                         </p>
                         <p className="text-black text-sm font-inter tracking-normal leading-none pt-2">
                           Total Item Prices:{" "}
-                          <span className="ml-2">{item.totalPrice}$</span>
+                          <span className="ml-2">${item.totalPrice}</span>
                         </p>
                         <div className="pt-4">
                           <Tooltip
@@ -82,12 +84,12 @@ const Cart = ({ openModal, setOpen}) => {
                             placement="bottom"
                           >
                             <Button
-                              // onClick={() => dispatch(removeFromCart(item))}
+                              onClick={() => dispatch(removeFromCart(item))}
                               size="sm"
                               color="red"
                               ripple={true}
                               variant="filled"
-                              // className="bg-red p-4"
+                              className="bg-red p-4"
                             >
                               Remove
                             </Button>
