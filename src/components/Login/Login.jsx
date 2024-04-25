@@ -39,25 +39,25 @@ const Login = () => {
                 Sign In
               </Typography>
             </CardHeader>
-            <CardBody className="flex flex-col gap-6">
+            <CardBody className="flex flex-col gap-2">
+              <label className=''>Name:</label>
               <Input
-                label="Name"
                 size="lg"
                 type="text"
                 name="name"
                 value={values.name}
                 onChange={onChange}
               />
-              <Input
-                label="Password" 
+              <label className=''>Password:</label>
+              <Input 
                 size="lg"
                 type="password"
                 name="password"
                 value={values.password}
                 onChange={onChange}
               />
+              <label>Image URL address</label>
               <Input
-                label="Image URL address"
                 size="lg"
                 type="text"
                 name="image"
