@@ -29,7 +29,7 @@ const Login = () => {
     const dispatch = useDispatch();
 
     return (
-        <div className="grid grid-cols-1 items-center justify-items-center h-screen">
+        <div className="grid grid-cols-1 items-center justify-items-center  h-screen">
           <Card className="w-96">
             <CardHeader
               variant="gradient"
@@ -70,10 +70,10 @@ const Login = () => {
               <Button
                 variant="gradient"
                 fullWidth
-                className='bg-blue-500'
+                className='bg-blue-500 text-sm'
                 onClick={() => dispatch(login(values))}
               >
-                SIGN IN
+                LOG IN
               </Button>
               <Typography variant="small" className="mt-6 flex justify-center">
                 Image is optional

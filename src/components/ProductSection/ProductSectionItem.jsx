@@ -39,13 +39,13 @@ const ProductSectionItem = ({
         />
       </CardHeader>
       <CardBody className='text-center'>
-        <Typography variant="h4" color="blue-gray" className="mb-2" textGradient>
+        <Typography variant="h4" color="blue-gray" className="mb-2" textgradient="true">
         {name}
         </Typography>
-        <Typography color='gray' className='font-medium' textGradient>
+        <Typography color='gray' className='font-medium' textgradient="true">
          {text}
         </Typography>
-        <div className='flex justify-between items-center pt-4' textGradient>
+        <div className='flex justify-between items-center pt-4' textgradient="true">
         <Typography>
          Size left: {defaultSize}
         </Typography>
@@ -75,7 +75,7 @@ const ProductSectionItem = ({
                 size='lg' 
                 color='gray' 
                 variant='outlined' 
-                ripple='true'>Add to Cart</Button>
+                ripple={true} >Add to Cart</Button>
         </Tooltip>
       </CardFooter>
     </Card>
