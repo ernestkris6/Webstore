@@ -34,7 +34,7 @@ const dispatch = useDispatch();
         </div>
 
         <div className='flex flex-row items-center'>
-            <button className='font-inter text-base font-medium text-center m-4'>Logout</button>
+            {/* <button className='font-inter text-base font-medium text-center m-4'>Logout</button> */}
             <img className='w-4' src={love} alt='love icon' />
             <p className='ml-2 font-inter text-base font-medium text-center'>Wish List</p>
 
@@ -51,9 +51,13 @@ const dispatch = useDispatch();
             </div>
         </div>
         <div className='flex flex-row items-center cursor-pointer pl-4'>
-            {image && (<Avatar src={image} alt='avatar' size='sm' className='mr-2'/>)}
+            {image && (<Avatar 
+            src={image} 
+            alt='avatar' 
+            size='sm' 
+            className='mr-2 w-8 h-8'/>)}
             <div onClick={()=> dispatch(logout())}>
-                <Tooltip  content="Sign Out Now!" placement="bottom" className='p-4 text-sm'>
+                <Tooltip  content="Sign Out?" placement="bottom" className='p-2 text-sm'>
                     <p className='font-inter text-sm font-bold tracking-normal leading-none'>
                         Hi {name.charAt().toUpperCase() + name.slice(1)}
                     </p>
