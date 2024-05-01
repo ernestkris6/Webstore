@@ -17,6 +17,11 @@ const FilteredProducts = () => {
           <h1 className='text-4xl font-inter text-gray-600 font-bold tracking-normal leading-none'>
             {type}
           </h1>
+          <div className='flex items-center justify-between py-8'>
+            <div className='flex items-center'>
+
+            </div>
+          </div>
       </div>
       <div className='grid grid-cols-4 m-4 justify-items-center py-8 gap-12'>
           {products
