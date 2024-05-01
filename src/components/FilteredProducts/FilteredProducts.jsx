@@ -11,7 +11,7 @@ const FilteredProducts = () => {
   const { type } = useParams();
   console.log("params", type);
 
-  const genderButtons = [male, female];
+  const genderButtons = ["MALE", "FEMALE"];
 
 
   return(
@@ -23,17 +23,31 @@ const FilteredProducts = () => {
           <div className='flex items-center justify-between py-8'>
             <div className='flex items-center'>
                 {genderButtons.map((product, index)=> {
-                  <div key={index}>
+                  return(
+                    <div key={index}>
                       <Button 
                       color='gray' 
                       size='lg' 
-                      variant='outlined' 
+                      variant='out
+                      lined' 
                       ripple={true}
-                      className='text-black hover:bg-gray-300 duration-300 ease-in-out mr-4'>
+                      className='bg-black font-inter text-white hover:bg-gray-300 duration-300 ease-in-out mr-4 p-2 text-md'>
                           {product}
                       </Button>
                   </div>
+                  );
+                  
                 })}
+
+                      <Button 
+                      color='gray' 
+                      size='lg' 
+                      variant='out
+                      lined' 
+                      ripple={true}
+                      className='bg-black font-inter text-white hover:bg-gray-300 duration-300 ease-in-out mr-4 p-2 text-md'>
+                          HIGH PRICE
+                      </Button>
             </div>
           </div>
       </div>
