@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import ProductCard from './ProductCard';
+import { Button } from "@material-tailwind/react";
 
 
 const FilteredProducts = () => {
@@ -9,6 +10,8 @@ const FilteredProducts = () => {
   console.log("products", products);
   const { type } = useParams();
   console.log("params", type);
+
+  const genderButtons = [male, female];
 
 
   return(
@@ -19,7 +22,18 @@ const FilteredProducts = () => {
           </h1>
           <div className='flex items-center justify-between py-8'>
             <div className='flex items-center'>
-
+                {genderButtons.map((product, index)=> {
+                  <div key={index}>
+                      <Button 
+                      color='gray' 
+                      size='lg' 
+                      variant='outlined' 
+                      ripple={true}
+                      className='text-black hover:bg-gray-300 duration-300 ease-in-out mr-4'>
+                          {product}
+                      </Button>
+                  </div>
+                })}
             </div>
           </div>
       </div>
