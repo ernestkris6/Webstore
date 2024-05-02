@@ -61,9 +61,9 @@ export const productSlice = createSlice({
         },
         sortByPrice(state, action){
             try {
-                const price = state.filteredProducts.sort((a, b)=> {
-                    a.price > b.price ? -1 : 1;
-                });
+                const price = state.filteredProducts.sort((a, b)=> (
+                    a.price > b.price ? -1 : 1
+                ));
                 state.filteredProducts = price;
                 let count = price.length;
                 if(count > 1){
@@ -87,7 +87,8 @@ export const productSlice = createSlice({
                 const color = state.filteredProducts.filter((product) => 
                 product.color.includes(action.payload))
                 state.filteredProducts = color;
-                if(color.length = 0){
+
+                if(color.length === 0){
                     state.error = true;
                     state.filteredProducts = [];
                 }else{
@@ -105,7 +106,7 @@ export const productSlice = createSlice({
                 const size = state.filteredProducts.filter((product) => 
                 product.size.includes(action.payload))
                 state.filteredProducts = size;
-                if(size.length = 0){
+                if(size.length === 0){
                     state.error = true;
                     state.filteredProducts = [];
                 }else{
