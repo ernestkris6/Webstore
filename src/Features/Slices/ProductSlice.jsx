@@ -6,6 +6,7 @@ export const productSlice = createSlice({
     initialState : {
         filteredProducts : JSON.parse(sessionStorage.getItem("filterData")) || storeData,
         singleProduct : JSON.parse(sessionStorage.getItem("oneProduct")) || storeData,
+        error: false,
     },
     reducers : {
         filterProducts(state, action) {
@@ -33,9 +34,22 @@ export const productSlice = createSlice({
 
             }
             catch(err){
-                return err
+                return err;
             }
-        }
+        },
+
+        filterGender(state, action){
+            try {
+                const gender = state.filteredProducts.filter(
+                    (product) => product.gender === action.payload);
+                    state.error = false;
+                    state.filteredProducts = gender
+            }
+            catch(err){
+                return err;
+            }
+           
+        },
  }
 
 
