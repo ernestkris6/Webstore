@@ -124,10 +124,6 @@ export const productSlice = createSlice({
 
 })
 
-
-
-
-
 export const { 
     filterProducts, 
     singleProduct, 
