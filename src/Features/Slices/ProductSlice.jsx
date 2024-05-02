@@ -130,6 +130,6 @@ export const {
     filterGender, 
     sortByPrice, 
     filterByColor,
-    filterBySize 
+    filterBySize ,
 } = productSlice.actions;
 export default productSlice.reducer;
