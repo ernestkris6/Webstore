@@ -3,6 +3,13 @@ import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import ProductCard from './ProductCard';
 import { Button } from "@material-tailwind/react";
+import { 
+  Menu,
+  MenuHandler,
+  MenuList,
+  MenuItem,
+ } from "@material-tailwind/react";
+
 
 
 const FilteredProducts = () => {
@@ -12,6 +19,23 @@ const FilteredProducts = () => {
   console.log("params", type);
 
   const genderButtons = ["MALE", "FEMALE"];
+  const colorButtons = [
+    "red",
+    "green",
+    "yellow",
+    "purple",
+    "orange",
+    "blue",
+    "black",
+    "brown",
+  ];
+
+  const sizeButtons = [
+    "S",
+    "M",
+    "LG",
+    "XL"
+  ]
 
 
   return(
@@ -48,6 +72,63 @@ const FilteredProducts = () => {
                       className='bg-black font-inter text-white hover:bg-gray-300 duration-300 ease-in-out mr-4 p-2 text-md'>
                           HIGH PRICE
                       </Button>
+
+                      <Menu>
+                        <MenuHandler>
+                          <Button color='gray' 
+                              size='lg' 
+                              variant='out
+                              lined' 
+                              ripple={true}
+                              className='bg-black font-inter text-white hover:bg-gray-300 duration-300 ease-in-out mr-4 p-2 text-md'>SELECT A COLOUR</Button>
+                        </MenuHandler>
+                        <MenuList>
+                          {colorButtons.map((product, index) => {
+                              return (
+                                  <MenuItem 
+                                  style={{color: product}} 
+                                  key={index}
+                                  className='px-10 py-2 hover:bg-gray-300'
+                                  >
+                                    {product}
+                                  </MenuItem>
+                              )
+                          })}
+                        </MenuList>
+                      </Menu>
+                      <Menu>
+                        <MenuHandler>
+                          <Button color='gray' 
+                              size='lg' 
+                              variant='out
+                              lined' 
+                              ripple={true}
+                              className='bg-black font-inter text-white hover:bg-gray-300 duration-300 ease-in-out mr-4 p-2 text-md'>SELECT A SIZE</Button>
+                        </MenuHandler>
+                        <MenuList>
+                          {sizeButtons.map((product, index) => {
+                              return (
+                                  <MenuItem 
+                                  key={index}
+                                  className='px-10 py-2 hover:bg-gray-300'
+                                  >
+                                    {product}
+                                  </MenuItem>
+                              )
+                          })}
+                        </MenuList>
+                      </Menu>
+            </div>
+            <div className='pr-14'>
+              <Button
+              color='gray' 
+              size='lg' 
+              variant='out
+              lined' 
+              ripple={true}
+              className='bg-black font-inter text-white hover:bg-gray-300 duration-300 ease-in-out mr-4 p-2 text-md'>
+               CLEAR FILTER
+              </Button>
             </div>
           </div>
       </div>
