@@ -14,6 +14,7 @@ export const productSlice = createSlice({
              const filter = storeData.filter((product) =>
              product.type === action.payload);
              state.filteredProducts = filter;
+             state.error =false;
              console.log("filter", filter);
              const saveState = JSON.stringify(filter);
              sessionStorage.setItem("filterData", saveState);
@@ -48,7 +49,7 @@ export const productSlice = createSlice({
                     if(oneGenderType) {
                         state.error = false;
                         const saveState = JSON.stringify(gender);
-                        sessionStorage.setItem("filterData", saveState);
+                        sessionStorage.setItem("filteredData", saveState);
                     } else{
                         state.error = true;
                         state.filteredProducts = [];
@@ -72,7 +73,7 @@ export const productSlice = createSlice({
                     if(noError){
                         state.filteredProducts = price;
                         const saveState = JSON.stringify(price);
-                        sessionStorage.setItem("filterData", saveState);
+                        sessionStorage.setItem("filteredData", saveState);
                     }
                 } else {
                     state.error = true;

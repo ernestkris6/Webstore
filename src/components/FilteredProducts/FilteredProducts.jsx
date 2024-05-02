@@ -41,7 +41,7 @@ const FilteredProducts = () => {
   const sizeButtons = [
     "S",
     "M",
-    "LG",
+    "L",
     "XL"
   ]
 
@@ -80,7 +80,9 @@ const FilteredProducts = () => {
                       variant='out
                       lined' 
                       ripple={true}
-                      className='bg-black font-inter text-white hover:bg-gray-300 duration-300 ease-in-out mr-4 p-2 text-md'>
+                      className='bg-black font-inter text-white hover:bg-gray-300 duration-300 ease-in-out mr-4 p-2 text-md'
+                      onClick={()=>dispatch(sortByPrice())}
+                      >
                           HIGH PRICE
                       </Button>
 
@@ -91,7 +93,8 @@ const FilteredProducts = () => {
                               variant='out
                               lined' 
                               ripple={true}
-                              className='bg-black font-inter text-white hover:bg-gray-300 duration-300 ease-in-out mr-4 p-2 text-md'>SELECT A COLOUR</Button>
+                              className='bg-black font-inter text-white hover:bg-gray-300 duration-300 ease-in-out mr-4 p-2 text-md'
+                              >SELECT A COLOUR</Button>
                         </MenuHandler>
                         <MenuList>
                           {colorButtons.map((product, index) => {
@@ -100,6 +103,7 @@ const FilteredProducts = () => {
                                   style={{color: product}} 
                                   key={index}
                                   className='px-10 py-2 hover:bg-gray-300'
+                                  onClick={()=> dispatch(filterByColor(product))}
                                   >
                                     {product}
                                   </MenuItem>
@@ -109,7 +113,9 @@ const FilteredProducts = () => {
                       </Menu>
                       <Menu>
                         <MenuHandler>
-                          <Button color='gray' 
+                          <Button 
+                              disabled = {type === "Bags" || type === "Shoes"}
+                              color='gray' 
                               size='lg' 
                               variant='out
                               lined' 
@@ -122,6 +128,7 @@ const FilteredProducts = () => {
                                   <MenuItem 
                                   key={index}
                                   className='px-10 py-2 hover:bg-gray-300'
+                                  onClick={()=> dispatch(filterBySize(product))}
                                   >
                                     {product}
                                   </MenuItem>
@@ -137,7 +144,9 @@ const FilteredProducts = () => {
               variant='out
               lined' 
               ripple={true}
-              className='bg-black font-inter text-white hover:bg-gray-300 duration-300 ease-in-out mr-4 p-2 text-md'>
+              className='bg-black font-inter text-white hover:bg-gray-300 duration-300 ease-in-out mr-4 p-2 text-md'
+              onClick={()=> dispatch(filterProducts(type))}
+              >
                CLEAR FILTER
               </Button>
               </div>
