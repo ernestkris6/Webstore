@@ -157,12 +157,13 @@ const Cart = ({ openModal, setOpen }) => {
   const totalPrice = useSelector((state) => state.cart.totalPrice);
 
   const dispatch = useDispatch();
+  
   return (
-    <div>
+    <div className="grid grid-cols-2">
       {cart.length > 0 ? (
         <Fragment>
           <Dialog
-            className="w-[1/2] h-[100px] border-0 outline-10"
+            className="w-2/4 h-auto border-0 outline-10"
             open={openModal}
             handler={() => setOpen(false)}
             animate={{
@@ -230,6 +231,7 @@ const Cart = ({ openModal, setOpen }) => {
                               color="red"
                               ripple={true}
                               variant="filled"
+                              className="bg-black"
                             >
                               Remove
                             </Button>
@@ -252,7 +254,7 @@ const Cart = ({ openModal, setOpen }) => {
       ) : (
         <Fragment>
           <Dialog
-            className="border-0 outline-0"
+            className="border-0 outline-0 w-2/4"
             open={openModal}
             handler={() => setOpen(false)}
             animate={{
