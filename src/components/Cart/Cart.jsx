@@ -35,49 +35,49 @@ const Cart = ({ openModal, setOpen }) => {
               divider
               className="flex flex-col my-10 justify-center items-start"
             >
-              {cart.map((item, index) => {
+              {cart.map((product, index) => {
                 return (
                   <div key={index}>
                     <div className="grid grid-cols-2 py-4">
                       <div>
                         <img
                           className="h-[125px] rounded-md"
-                          src={item.img}
-                          alt={item.name}
+                          src={product.img}
+                          alt={product.name}
                         ></img>
                         <div className="flex flex-col items-start">
                           <h4 className="text-black text-base font-inter font-bold tracking-normal leading-none pt-2">
-                            {item.name}
+                            {product.name}
                           </h4>
                         </div>
                         <div className="max-w-xs">
                           <p className="text-black text-xs font-inter tracking-normal leading-none pt-2">
-                            {item.text}
+                            {product.text}
                           </p>
                         </div>
                       </div>
                       <div>
                         <p className="text-black text-sm font-inter tracking-normal leading-none pt-2">
                           Selected size:{" "}
-                          <span className="ml-2">{item.size}</span>
+                          <span className="ml-2">{product.size}</span>
                         </p>
                         <p className="text-black text-sm font-inter tracking-normal leading-none pt-2">
                           Selected color:{" "}
                           <span
                             className="ml-2 rounded-full px-2"
-                            style={{ backgroundColor: item.color }}
+                            style={{ backgroundColor: product.color }}
                           ></span>
                         </p>
                         <p className="text-black text-sm font-inter tracking-normal leading-none pt-2">
-                          Amount: <span className="ml-2">{item.amount}</span>
+                          Amount: <span className="ml-2">{product.amount}</span>
                         </p>
                         <p className="text-black text-sm font-inter tracking-normal leading-none pt-2">
                           Single Item Price:{" "}
-                          <span className="ml-2">{item.price}$</span>
+                          <span className="ml-2">{product.price}$</span>
                         </p>
                         <p className="text-black text-sm font-inter tracking-normal leading-none pt-2">
                           Total Item Prices:{" "}
-                          <span className="ml-2">{item.totalPrice}$</span>
+                          <span className="ml-2">{product.totalPrice}$</span>
                         </p>
                         <div className="pt-4">
                           <Tooltip
@@ -85,7 +85,7 @@ const Cart = ({ openModal, setOpen }) => {
                             placement="bottom"
                           >
                             <Button
-                              onClick={() => dispatch(removeFromCart(item))}
+                              onClick={() => dispatch(removeFromCart(product))}
                               size="sm"
                               color="red"
                               ripple={true}
