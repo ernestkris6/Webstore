@@ -13,6 +13,44 @@ import icon1 from '../../assets/Frame 35224.png';
 
 
 const Cards = () => {
+
+const cardData = [
+  {
+    img : {jamb},
+    text : "UTME",
+  },
+  {
+    img : {waec},
+    text : "WASSCE",
+    id : 1
+  },
+  {
+    img : {jamb},
+    text : "JAMB",
+    id : 2
+  },
+  {
+    img : {gce},
+    text : "GCE Nov/Dec",
+    id : 3
+  },
+  {
+    img : {cambridge},
+    text : "CAMBRIDGE",
+    id : 4
+  },
+  {
+    img : {ui},
+    text : "UI P.UTME",
+    id : 5
+  },
+]
+
+
+
+
+
+
   return(
     <div>
 
