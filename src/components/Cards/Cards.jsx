@@ -16,44 +16,45 @@ const Cards = () => {
 
 const cardData = [
   {
-    img : {jamb},
+    img : jamb,
     text : "UTME",
   },
   {
-    img : {waec},
+    img : waec,
     text : "WASSCE",
     id : 1
   },
   {
-    img : {jamb},
+    img : jamb,
     text : "JAMB",
     id : 2
   },
   {
-    img : {gce},
+    img : gce,
     text : "GCE Nov/Dec",
     id : 3
   },
   {
-    img : {cambridge},
+    img : cambridge,
     text : "CAMBRIDGE",
     id : 4
   },
   {
-    img : {ui},
+    img : ui,
     text : "UI P.UTME",
     id : 5
   },
 ]
 
-
-
-
-
-
   return(
     <div>
-
+      {cardData.map((card, index) => {
+         return(
+          <div key={index}>
+            <div>{card.img}</div>
+          </div>
+         )
+      })}
     </div>
   )
 }
