@@ -49,15 +49,13 @@ const cardData = [
 
 
   return(
-    <div className='grid grid-cols-3 mt-20'>
+    <div className='grid grid-cols-3 gap-[0] mt-20'>
       {cardData.map((card, index) => {
         return(
           <div key={index} className=''>
             <img src={card.img} alt="cards" className='m-auto mb-8 mt-4'/>
             <p className='text-center'>{card.text}</p>
-            
           </div>
-           
         )
       })}
     </div>
