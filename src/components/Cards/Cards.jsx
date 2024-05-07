@@ -10,13 +10,14 @@ import waec2 from '../../assets/waec2.png';
 import search from '../../assets/tabler_search.png';
 import filter from '../../assets/bi_filter.png';
 import icon1 from '../../assets/Frame 35224.png';
+import card from '@material-tailwind/react/theme/components/card';
 
 
 const Cards = () => {
 
 const cardData = [
   {
-    img : jamb,
+    img : cambridge,
     text : "UTME",
   },
   {
@@ -25,7 +26,7 @@ const cardData = [
     id : 1
   },
   {
-    img : jamb,
+    img : cambridge,
     text : "JAMB",
     id : 2
   },
@@ -46,19 +47,22 @@ const cardData = [
   },
 ]
 
+
   return(
-    <div>
+    <div className='grid grid-cols-3 mt-20'>
       {cardData.map((card, index) => {
-         return(
-          <div key={index}>
-            <div>{card.img}</div>
+        return(
+          <div key={index} className=''>
+            <img src={card.img} alt="cards" className='m-auto mb-8 mt-4'/>
+            <p className='text-center'>{card.text}</p>
+            
           </div>
-         )
+           
+        )
       })}
     </div>
   )
 }
-
 
 export default Cards;
 
@@ -145,7 +149,7 @@ export default Cards;
   //     </div>
 
   //     <div className='grid grid-cols-3 gap-6 px-6 mt-12 lmobile:grid-cols-4 lmobile:m-12'>
-  //       <div>
+  //       
   //           <img className='border-2 rounded-xl px-4 py-8' src={images.img5} alt='img'/>
   //           <p className='text-center'>{data.text2}</p>
   //       </div>
