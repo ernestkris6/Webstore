@@ -1,16 +1,16 @@
 import React from 'react';
 
-import jamb from '../../assets/waec2.png';
+// import jamb from '../../assets/waec2.png';
 import cambridge from '../../assets/Ellipse 363 (4).png';
 import waec from '../../assets/Ellipse 363 (5).png';
 import gce from '../../assets/Ellipse 363 (6).png'
 import ui from '../../assets/Ellipse 363 (7).png';
-import unilag from '../../assets/unilag.png';
-import waec2 from '../../assets/waec2.png';
-import search from '../../assets/tabler_search.png';
-import filter from '../../assets/bi_filter.png';
-import icon1 from '../../assets/Frame 35224.png';
-import card from '@material-tailwind/react/theme/components/card';
+// import unilag from '../../assets/unilag.png';
+// import waec2 from '../../assets/waec2.png';
+// import search from '../../assets/tabler_search.png';
+// import filter from '../../assets/bi_filter.png';
+// import icon1 from '../../assets/Frame 35224.png';
+// import card from '@material-tailwind/react/theme/components/card';
 
 
 const Cards = () => {
