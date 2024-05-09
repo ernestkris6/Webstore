@@ -48,17 +48,51 @@ const cardData = [
 ]
 
 
+const fruits = [
+  "Apple",
+  "Apricot",
+  "Avocado",
+  "Banana",
+  "Berries",
+  "Carrots",
+  "Cherry",
+  "Cucumber",
+  "Dates",
+  "Dragon fruit",
+  "Elder berry",
+  "Fig",
+  "Grape",
+  "Garden egg"
+];
+
+
+
+
   return(
+    <>
     <div className='grid grid-cols-3 gap-[0] mt-20'>
-      {cardData.map((card, index) => {
-        return(
+      {cardData.map((card, index) =>(
           <div key={index} className=''>
             <img src={card.img} alt="cards" className='m-auto mb-8 mt-4'/>
             <p className='text-center'>{card.text}</p>
           </div>
         )
-      })}
-    </div>
+      )}
+      </div>
+
+      <div className='flex flex-col items-center justify-center'>
+          <input 
+          className='flex items-center text-center justify-center mt-8 border-2 rounded-md outline-none' 
+          type='text' 
+          placeholder='search fruits...' />
+           {fruits.map(fruit => (
+            <div className=''>
+              <p>{fruit}</p>
+            </div>
+          ))}
+      </div>
+     
+    </>
   )
 }
 
