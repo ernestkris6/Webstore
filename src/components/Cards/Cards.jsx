@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 // import jamb from '../../assets/waec2.png';
 import cambridge from '../../assets/Ellipse 363 (4).png';
@@ -12,8 +12,27 @@ import ui from '../../assets/Ellipse 363 (7).png';
 // import icon1 from '../../assets/Frame 35224.png';
 // import card from '@material-tailwind/react/theme/components/card';
 
+const useDebounce = (text, delay)=> {
+  const [debounce, setDebounce] = useState(text);
+
+  useEffect(() => {
+      const timer = setTimeout(() => {
+        setDebounce(text)
+      }, delay);
+
+      return () => {
+        clearTimeout(timer);
+      }
+  }, [text, delay])
+
+    return debounce;
+};
+
 
 const Cards = () => {
+  
+const [ text, setText ] = useState("");
+const debouncedText = useDebounce(text, 2000);
 
 const cardData = [
   {
@@ -68,6 +87,10 @@ const fruits = [
 const [ fruitsData, setFruitsData ] = useState(fruits);
 const [searchTerm, setSearchTerm ] = useState("");
 
+
+
+
+
 const handleInputChange = (e) => {
   setSearchTerm(e.target.value);
   console.log(searchTerm);
@@ -88,8 +111,23 @@ const fruitsDataFiltered = fruitsData.filter((fruit) => fruit.toLowerCase().incl
         )
       )}
       </div>
+      
+          {/* UseDebounce hook */}
+          <h2 className='flex justify-center mt-8 font-bold'>USE-DEBOUNCE TEST</h2>
+            <div className='flex flex-col items-center justify-center'>
+              <input 
+              type='text'
+              value={text}
+              onChange={(e)=> setText(e.target.value)}
+              placeholder='Enter text here...'
+              className='flex items-center text-center justify-center mt-8 border-2 rounded-md outline-none'
+              />
+                <p>Debounced value:{debouncedText}</p>
+           </div>
 
-      <div className='flex flex-col items-center justify-center'>
+
+     {/* search item */}
+     <div className='flex flex-col items-center justify-center'>
           <input 
           className='flex items-center text-center justify-center mt-8 border-2 rounded-md outline-none' 
           type='text' 
@@ -103,7 +141,6 @@ const fruitsDataFiltered = fruitsData.filter((fruit) => fruit.toLowerCase().incl
             </div>
           ))}
       </div>
-     
     </>
   )
 }
