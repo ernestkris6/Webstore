@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 // import jamb from '../../assets/waec2.png';
 import cambridge from '../../assets/Ellipse 363 (4).png';
@@ -65,6 +65,15 @@ const fruits = [
   "Garden egg"
 ];
 
+const [ fruitsData, setFruitsData ] = useState(fruits);
+const [searchTerm, setSearchTerm ] = useState("");
+
+const handleInputChange = (e) => {
+  setSearchTerm(e.target.value);
+  console.log(searchTerm);
+}
+
+const fruitsDataFiltered = fruitsData.filter((fruit) => fruit.toLowerCase().includes(searchTerm.toLowerCase()))
 
 
 
@@ -84,10 +93,13 @@ const fruits = [
           <input 
           className='flex items-center text-center justify-center mt-8 border-2 rounded-md outline-none' 
           type='text' 
-          placeholder='search fruits...' />
-           {fruits.map(fruit => (
+          placeholder='search fruits...'
+          onChange={handleInputChange}
+          />
+           {fruitsDataFiltered.map(fruit => (
             <div className=''>
               <p>{fruit}</p>
+              {setFruitsData}
             </div>
           ))}
       </div>
