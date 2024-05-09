@@ -24,9 +24,9 @@ const Footer = () => {
             <div>
                 <img className='h-20' src={logo} alt='logo' />
             </div>
-            <div>
-                <h1 className='font-bold'>{time}</h1>
-            </div>
+                <div>
+                    <h1 className='font-bold'>{time}</h1>
+                </div>
             <div>
                 
                 <p className='text-black text-sm font-inter font-bold leading-none no-underline left-'>
