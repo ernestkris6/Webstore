@@ -30,6 +30,7 @@ const useDebounce = (text, delay) => {
 
 const Cards = () => {
   
+  
 const [ text, setText ] = useState("");
 const debouncedText = useDebounce(text, 2000);
 
@@ -98,12 +99,11 @@ const [searchTerm, setSearchTerm ] = useState("");
 
 //onchange={(e) => setSearchTerm(e.target.value)}
 
-
-
 const handleInputChange = (e) => {
   setSearchTerm(e.target.value);
   console.log(searchTerm);
 }
+
 
 const fruitsDataFiltered = fruitsData.filter((fruit) => fruit.toLowerCase().includes(searchTerm.toLowerCase()))
 
