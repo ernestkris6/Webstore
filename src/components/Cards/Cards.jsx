@@ -83,10 +83,20 @@ const fruits = [
   "Garden egg"
 ];
 
-const [ fruitsData, setFruitsData ] = useState(fruits);
+const [fruitsData, setFruitsData ] = useState(fruits);
 const [searchTerm, setSearchTerm ] = useState("");
 
 
+//you can have your input change as 
+
+// const handleInputChange = (e) => {
+//   setSearchTerm(e.target.value);
+//   console.log(searchTerm);
+// }
+
+//or as
+
+//onchange={(e) => setSearchTerm(e.target.value)}
 
 
 
