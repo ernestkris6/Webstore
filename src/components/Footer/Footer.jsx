@@ -2,19 +2,18 @@ import React, { useEffect, useState } from 'react';
 import logo from '../../assets/logo.png';
 
 
-
-
-
 const Footer = () => {
-    //const time = new Date().toLocaleTimeString();
-    const [ time, setTime ] = useState(new Date().toLocaleTimeString());
+    
+    const [time, setTime] = useState(new Date().toLocaleTimeString());
 
-    useEffect(() => {
-        setTimeout(()=>{
+    useEffect(()=>{
+        setTimeout(() => {
             setTime(new Date().toLocaleTimeString())
-        }, 1000)
-    }, [time])
-     
+        }, 1000);
+    },[time])
+    
+    
+
   return (
     <div className='mt-12'>
         <div className='flex items-center justify-center'>
@@ -25,7 +24,7 @@ const Footer = () => {
                 <img className='h-20' src={logo} alt='logo' />
             </div>
                 <div>
-                    <h1 className='font-bold'>{time}</h1>
+                    <h1 className='font-bold font-inter'>{time}</h1>
                 </div>
             <div>
                 
