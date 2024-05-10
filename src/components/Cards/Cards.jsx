@@ -12,23 +12,25 @@ import ui from '../../assets/Ellipse 363 (7).png';
 // import icon1 from '../../assets/Frame 35224.png';
 // import card from '@material-tailwind/react/theme/components/card';
 
-const useDebounce = (text, delay) => {
-  const [debounce, setDebounce] = useState(text);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-        setDebounce(text)
-    }, delay);
-    return () => {
-      clearTimeout(timer)
-    }
-
-  }, [text, delay]);
-  return debounce;
-}
 
 
 const Cards = () => {
+
+  const useDebounce = (text, delay) => {
+    const [debounce, setDebounce] = useState(text);
+  
+    useEffect(() => {
+      const timer = setTimeout(() => {
+          setDebounce(text)
+      }, delay);
+      return () => {
+        clearTimeout(timer)
+      }
+  
+    }, [text, delay]);
+    return debounce;
+  }
   
   
 const [ text, setText ] = useState("");
