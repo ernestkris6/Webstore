@@ -39,7 +39,7 @@ const Cart = ({ openModal, setOpen }) => {
                 return (
                   <div key={index}>
                     <div className="grid grid-cols-2 py-4">
-                      <div>
+                      <div className="m-2">
                         <img
                           className="h-[125px] rounded-md"
                           src={product.img}
@@ -90,7 +90,7 @@ const Cart = ({ openModal, setOpen }) => {
                               color="red"
                               ripple={true}
                               variant="filled"
-                              className="bg-black"
+                              className="bg-red-600"
                             >
                               Remove
                             </Button>
